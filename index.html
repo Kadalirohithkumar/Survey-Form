@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg">
+            <h1 class="form-heading text-center">Customer Survey Form</h1>
+            <div class="myForm">
+                <form id="myForm">
+                    <div class="d-flex flex-row">
+                        <div class="mb-3">
+                            <label for="Name">Name</label>
+                            <input type="text" class="form-control names mr-4" id="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="ml-5">Email</label>
+                            <input type="email" class="form-control ml-5" id="email" required>
+                        </div>
+                    </div>
+                    <label>Is this your first time using our products and services?</label>
+                    <div class="mb-3 d-flex flex-row">
+                        <div class="form-check mr-3">
+                            <input class="form-check-input" type="radio" value="Yes" id="PsYes" name="YesNo">
+                            <label class="form-check-label" for="PsYes">Yes</label>
+                        </div>
+                        <div class="form-check mr-3">
+                            <input class="form-check-input" type="radio" value="No" id="PsNO" name="YesNo">
+                            <label class="form-check-label" for="PsNo">No</label>
+                        </div>
+                    </div>
+
+                    <label>Would you recommend us to your friends and colleagues?</label>
+                    <div class="mb-3 d-flex flex-row">
+                        <div class="form-check mr-3">
+                            <input class="form-check-input" type="radio" value="Yes" id="FcYes" name="YesorNo">
+                            <label class="form-check-label" for="FcYes">Yes</label>
+                        </div>
+                        <div class="form-check mr-3">
+                            <input class="form-check-input" type="radio" value="No" id="FcNo" name="YesorNo">
+                            <label class="form-check-label" for="FcNo">No</label>
+                        </div>
+                    </div>
+
+                    <label>How satisfied are you with our company overall?</label>
+                    <div class="mb-3 d-flex flex-row">
+                        <div class="form-check mr-3">
+                            <input class="form-check-input" type="radio" value="Satisfied" id="genderMale"
+                                name="Satisfaction">
+                            <label class="form-check-label" for="genderMale">Satisfied</label>
+                        </div>
+                        <div class="form-check mr-3">
+                            <input class="form-check-input" type="radio" value="Undecided" id="genderFemale"
+                                name="Satisfaction">
+                            <label class="form-check-label" for="genderFemale">Undecided</label>
+                        </div>
+                        <div class="form-check mr-3">
+                            <input class="form-check-input" type="radio" value="Unsatisfied" id="genderOther"
+                                name="Satisfaction">
+                            <label class="form-check-label" for="genderOther">Unsatisfied</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mobile">Do you have any suggestions to improve our service?</label>
+                        <input type="tel" class="form-control" id="mobile" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
